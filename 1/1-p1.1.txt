@@ -1,0 +1,6 @@
+When n=64, dgemm0 takes 0 seconds, dgemm1 takes 10 seconds
+When n=128, dgemm0 takes 30 seconds, dgemm1 takes 20 seconds
+When n=256, dgemm0 takes 280 seconds, dgemm1 takes 170 seconds
+When n=512, dgemm0 takes 2980 seconds, dgemm1 takes 1990 seconds
+When n=1024, dgemm0 takes 26630 seconds, dgemm1 takes 16140 seconds
+When n=2048, dgemm0 takes 440560 seconds, dgemm1 takes 386430 seconds

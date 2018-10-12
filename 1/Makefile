@@ -1,9 +1,9 @@
 CXX := g++
 HEADERS := functions.h
 OBJ := init.o
-TARGETS := 1-p1
+TARGETS := 1-p1p2
 
-1-p1: 1.p1.main.o 1.p1.dgemm0.o 1.p1.dgemm1.o $(OBJ)
+1-p1p2: 1.p1p2.main.o 1.p1.dgemm0.o 1.p1.dgemm1.o 1.p2.dgemm2.o $(OBJ)
 	$(CXX) -o $@ $^
 
 %.o: %.c functions.h

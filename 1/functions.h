@@ -12,6 +12,7 @@ void uninit_matrix_with_free(double* a, double* b, double* c);
 
 clock_t dgemm0(int n);
 clock_t dgemm1(int n);
+clock_t dgemm2(int n);
 
 
 #endif

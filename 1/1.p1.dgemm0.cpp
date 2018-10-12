@@ -17,7 +17,9 @@ clock_t dgemm0(int n)
     double* c = NULL;
 
     // init
-    init_matrix_randomly(a, b, c, n);
+    init_matrix_randomly(&a, &b, &c, n);
+    // printf("Inited0.\n");
+    // printf("(0,0)=%lf\n", a[0]);
     
     // The algo
     clock_t begin = clock();
@@ -26,6 +28,7 @@ clock_t dgemm0(int n)
             for (int k = 0; k < n; k++)
                 c[i * n + j] += a[i * n + k] * b[k * n + j];
     clock_t end = clock();
+    // printf("computed0\n");
 
     uninit_matrix_with_free(a, b ,c);
 

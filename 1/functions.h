@@ -7,7 +7,7 @@
 
 extern int Ns[];
 
-void init_matrix_randomly(double* a, double* b, double* c, int n);
+void init_matrix_randomly(double** a, double** b, double** c, int n);
 void uninit_matrix_with_free(double* a, double* b, double* c);
 
 clock_t dgemm0(int n);

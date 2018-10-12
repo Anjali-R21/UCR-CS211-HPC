@@ -13,7 +13,7 @@ clock_t dgemm1(int n)
     double* c = NULL;
 
     // init
-    init_matrix_randomly(a, b, c, n);
+    init_matrix_randomly(&a, &b, &c, n);
 
     // the algo
     clock_t begin = clock();

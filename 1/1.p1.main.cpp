@@ -8,7 +8,7 @@
 int main()
 {
     clock_t t1, t2;
-    float sum1 = 0, sum2 = 0;    // Run 5 times and pick the average time
+    double sum1 = 0, sum2 = 0;    // Run 5 times and pick the average time
     for (int i = 0; i < 6; i++)
     {
         for (int j = 0; j < 5; j++)
@@ -19,9 +19,9 @@ int main()
             sum1 += t1;
             sum2 += t2;
 
-            printf("When n=%d, dgemm0 takes %lf ms, dgemm1 takes %lf ms\n", Ns[i], (double)t1/CLOCKS_PER_SEC, (double)t2/CLOCKS_PER_SEC);
+            printf("When n=%d, dgemm0 takes %lf s, dgemm1 takes %lf s\n", Ns[i], (double)t1/CLOCKS_PER_SEC, (double)t2/CLOCKS_PER_SEC);
         }
-        printf("On average, n=%d, dgemm0: %lu ms, dgemm1: %lu ms\n", Ns[i], sum1/5, sum2/5);
+        printf("On average, n=%d, dgemm0: %lf s, dgemm1: %lf s\n", Ns[i], sum1/5/CLOCKS_PER_SEC, sum2/5/CLOCKS_PER_SEC);
         sum1 = sum2 = 0;
     }
     return 0;

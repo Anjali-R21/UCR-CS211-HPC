@@ -6,6 +6,7 @@
 #include <ctime>
 
 extern int Ns[];
+extern int Nsp3[];
 
 void init_matrix_randomly(double** a, double** b, double** c, int n);
 void uninit_matrix_with_free(double* a, double* b, double* c);
@@ -13,6 +14,6 @@ void uninit_matrix_with_free(double* a, double* b, double* c);
 clock_t dgemm0(int n);
 clock_t dgemm1(int n);
 clock_t dgemm2(int n);
-
+clock_t dgemm3(int n);
 
 #endif

@@ -24,7 +24,7 @@ int main()
             printf("When n=%d, dgemm0: %lf s, dgemm1: %lf s， dgemm2: %lf\n", Ns[i], (double)t1/CLOCKS_PER_SEC, (double)t2/CLOCKS_PER_SEC, (double)t3/CLOCKS_PER_SEC);
         }
         printf("On average, n=%d, dgemm0: %lf s, dgemm1: %lf s, dgemm2: %lf\n", Ns[i], sum1/3/CLOCKS_PER_SEC, sum2/3/CLOCKS_PER_SEC, sum3/3/CLOCKS_PER_SEC);
-        sum1 = sum2 = 0;
+        sum1 = sum2 = sum3 = 0;
     }
     return 0;
 }

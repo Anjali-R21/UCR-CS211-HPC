@@ -1,6 +1,7 @@
 #include "functions.h"
 
 int Ns[] = {64, 128, 256, 512, 1024, 2048};
+int Nsp3[] = {66, 132, 258, 516, 1026, 2052};
 
 void init_matrix_randomly(double** a, double** b, double** c, int n)
 {

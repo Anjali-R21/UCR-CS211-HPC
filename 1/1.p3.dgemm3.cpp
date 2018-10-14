@@ -5,7 +5,7 @@
 
 #include "functions.h"
 
-clock_t dgemm3(int n)
+double dgemm3(int n)
 {
     // Definitions
     double* a = NULL;
@@ -16,7 +16,9 @@ clock_t dgemm3(int n)
     init_matrix_randomly(&a, &b, &c, n);
 
     // the algo
-    clock_t begin = clock();
+    timespec begin, end;
+    clock_gettime(CLOCK_MONOTONIC, &begin);
+    
     for (int i = 0; i < n; i += 3)
     {
         for (int j = 0; j < n; j += 3)
@@ -64,9 +66,10 @@ clock_t dgemm3(int n)
             c[(i+2)*n + j+2] = c22;
         }
     }
-    clock_t end = clock();
+    clock_gettime(CLOCK_MONOTONIC, &end);
 
     uninit_matrix_with_free(a, b ,c);
 
-    return end - begin;
+    double ret = end.tv_sec - begin.tv_sec + (end.tv_nsec - begin.tv_nsec) / 1e9;
+    return ret;
 }

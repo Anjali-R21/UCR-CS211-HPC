@@ -24,7 +24,7 @@ int main()
             sum3 += t3;
             sum4 += t4;
 
-            printf("When n=%d, dgemm0: %lf s, dgemm1: %lf s, dgemm2: %lf, dgemm3: %lf\n", Nsp3[i], (double)t1/CLOCKS_PER_SEC, (double)t2/CLOCKS_PER_SEC, (double)t3/CLOCKS_PER_SEC, (double)t3/CLOCKS_PER_SEC);
+            printf("When n=%d, dgemm0: %lf s, dgemm1: %lf s, dgemm2: %lf, dgemm3: %lf\n", Nsp3[i], ((double)t1)/CLOCKS_PER_SEC, (double)t2/CLOCKS_PER_SEC, (double)t3/CLOCKS_PER_SEC, (double)t3/CLOCKS_PER_SEC);
         }
         printf("On average, n=%d, dgemm0: %lf s, dgemm1: %lf s, dgemm2: %lf, dgemm3: %lf\n", Nsp3[i], sum1/REPEAT/CLOCKS_PER_SEC, sum2/REPEAT/CLOCKS_PER_SEC, sum3/REPEAT/CLOCKS_PER_SEC, sum4/REPEAT/CLOCKS_PER_SEC);
         sum1 = sum2 = sum3 = sum4 = 0;

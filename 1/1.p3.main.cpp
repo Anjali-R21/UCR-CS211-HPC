@@ -8,6 +8,7 @@
 
 int main()
 {
+    printf("%ld\n", CLOCKS_PER_SEC);
     clock_t t1, t2, t3, t4;
     double sum1 = 0, sum2 = 0, sum3 = 0, sum4 = 0;
     for (int i = 0; i < 6; i++)
@@ -24,6 +25,7 @@ int main()
             sum3 += t3;
             sum4 += t4;
 
+            printf("%lu %lu %lu\n", t1, t2, t3);
             printf("When n=%d, dgemm0: %lf s, dgemm1: %lf s, dgemm2: %lf, dgemm3: %lf\n", Nsp3[i], ((double)t1)/CLOCKS_PER_SEC, (double)t2/CLOCKS_PER_SEC, (double)t3/CLOCKS_PER_SEC, (double)t3/CLOCKS_PER_SEC);
         }
         printf("On average, n=%d, dgemm0: %lf s, dgemm1: %lf s, dgemm2: %lf, dgemm3: %lf\n", Nsp3[i], sum1/REPEAT/CLOCKS_PER_SEC, sum2/REPEAT/CLOCKS_PER_SEC, sum3/REPEAT/CLOCKS_PER_SEC, sum4/REPEAT/CLOCKS_PER_SEC);

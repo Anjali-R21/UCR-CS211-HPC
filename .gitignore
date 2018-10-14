@@ -88,3 +88,5 @@ dkms.conf
 1-p1
 1-p1p2
 ~$*.docx
+~$*.xlsx
+1-p3

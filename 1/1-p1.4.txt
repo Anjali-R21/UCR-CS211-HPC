@@ -1,0 +1,12 @@
+When n=64, dgemm0: 0.005472 s, dgemm1: 0.003160 s， dgemm2: 0.000886
+On average, n=64, dgemm0: 0.005472 s, dgemm1: 0.003160 s, dgemm2: 0.000886
+When n=128, dgemm0: 0.030707 s, dgemm1: 0.018560 s， dgemm2: 0.006868
+On average, n=128, dgemm0: 0.030707 s, dgemm1: 0.018560 s, dgemm2: 0.006868
+When n=256, dgemm0: 0.273267 s, dgemm1: 0.150659 s， dgemm2: 0.054437
+On average, n=256, dgemm0: 0.273267 s, dgemm1: 0.150659 s, dgemm2: 0.054437
+When n=512, dgemm0: 2.944207 s, dgemm1: 1.964954 s， dgemm2: 0.728050
+On average, n=512, dgemm0: 2.944207 s, dgemm1: 1.964954 s, dgemm2: 0.728050
+When n=1024, dgemm0: 25.478297 s, dgemm1: 16.999553 s， dgemm2: 7.188872
+On average, n=1024, dgemm0: 25.478297 s, dgemm1: 16.999553 s, dgemm2: 7.188872
+When n=2048, dgemm0: 442.655772 s, dgemm1: 268.567802 s， dgemm2: 105.531627
+On average, n=2048, dgemm0: 442.655772 s, dgemm1: 268.567802 s, dgemm2: 105.531627

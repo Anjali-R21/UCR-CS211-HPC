@@ -1,0 +1,12 @@
+When n=66, dgemm0: 0.003262 s, dgemm1: 0.001990 s, dgemm2: 0.000843, dgemm3: 0.000742
+On average, n=66, dgemm0: 0.003262 s, dgemm1: 0.001990 s, dgemm2: 0.000843, dgemm3: 0.000742
+When n=132, dgemm0: 0.029175 s, dgemm1: 0.017559 s, dgemm2: 0.007097, dgemm3: 0.005874
+On average, n=132, dgemm0: 0.029175 s, dgemm1: 0.017559 s, dgemm2: 0.007097, dgemm3: 0.005874
+When n=258, dgemm0: 0.263643 s, dgemm1: 0.147071 s, dgemm2: 0.062493, dgemm3: 0.046569
+On average, n=258, dgemm0: 0.263643 s, dgemm1: 0.147071 s, dgemm2: 0.062493, dgemm3: 0.046569
+When n=516, dgemm0: 2.413283 s, dgemm1: 1.437280 s, dgemm2: 0.625699, dgemm3: 0.423897
+On average, n=516, dgemm0: 2.413283 s, dgemm1: 1.437280 s, dgemm2: 0.625699, dgemm3: 0.423897
+When n=1026, dgemm0: 19.001283 s, dgemm1: 12.314581 s, dgemm2: 5.241118, dgemm3: 2.857817
+On average, n=1026, dgemm0: 19.001283 s, dgemm1: 12.314581 s, dgemm2: 5.241118, dgemm3: 2.857817
+When n=2052, dgemm0: 192.390376 s, dgemm1: 107.059477 s, dgemm2: 65.766212, dgemm3: 30.809667
+On average, n=2052, dgemm0: 192.390376 s, dgemm1: 107.059477 s, dgemm2: 65.766212, dgemm3: 30.809667

@@ -4,7 +4,7 @@
  */
 
 #include "functions.h"
-#define REPEAT 3
+#define REPEAT 1
 
 int main()
 {

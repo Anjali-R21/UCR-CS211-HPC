@@ -12,6 +12,12 @@ TARGETS := 1-p1p2 1-p3 2-p3
 2-p3: 2.p3.main.o 2.algo.o $(OBJ)
 	$(CXX) -o $@ $^
 
+2-p4: 2.p4.main.o $(OBJ)
+	$(CXX) -o 2-p4-o0 $^ -O0
+	$(CXX) -o 2-p4-o1 $^ -O1
+	$(CXX) -o 2-p4-o2 $^ -O2
+	$(CXX) -o 2-p4-o3 $^ -O3
+
 %.o: %.c functions.h
 	$(CXX) -c $< -o $@
 

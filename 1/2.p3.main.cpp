@@ -88,7 +88,7 @@ int main()
         memcpy(cother, c_origin, n*n*sizeof(double));
         tijk = ijk_block(a, b, cother, n, blocksizes[i]);
         correct &= check_correct(cijk, cother, n);
-        printf("blocksize: %d, time: %lf\n", blocksizes[i], tijk);
+        printf("blocksize: %d, time: %lf, check...%s\n", blocksizes[i], tijk, (correct?"passed":"failed"));
     }
 
     // finalize

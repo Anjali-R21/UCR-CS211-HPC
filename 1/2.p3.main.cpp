@@ -83,11 +83,14 @@ int main()
     n = 2048;
     int nblocks = sizeof(blocksizes)/sizeof(blocksizes[0]);
     printf("Different block size.....\n");
-    for (int i = 0; i < nblocks; i++)
+    memcpy(cijk, c_origin, n*n*sizeof(double));
+    tijk = ijk_block(a, b, cijk, n, blocksizes[0]);
+    printf("blocksize: %d, time: %lf\n", blocksizes[0], tijk);
+    for (int i = 1; i < nblocks; i++)
     {
         memcpy(cother, c_origin, n*n*sizeof(double));
         tijk = ijk_block(a, b, cother, n, blocksizes[i]);
-        correct &= check_correct(cijk, cother, n);
+        correct = check_correct(cijk, cother, n);
         printf("blocksize: %d, time: %lf, check...%s\n", blocksizes[i], tijk, (correct?"passed":"failed"));
     }
 

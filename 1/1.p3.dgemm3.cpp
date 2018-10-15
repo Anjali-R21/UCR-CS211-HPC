@@ -5,16 +5,8 @@
 
 #include "functions.h"
 
-double dgemm3(int n)
+double dgemm3(double* a, double* b, double* c, int n)
 {
-    // Definitions
-    double* a = NULL;
-    double* b = NULL;
-    double* c = NULL;
-
-    // init
-    init_matrix_randomly(&a, &b, &c, n);
-
     // the algo
     timespec begin, end;
     clock_gettime(CLOCK_MONOTONIC, &begin);
@@ -67,8 +59,6 @@ double dgemm3(int n)
         }
     }
     clock_gettime(CLOCK_MONOTONIC, &end);
-
-    uninit_matrix_with_free(a, b ,c);
 
     double ret = end.tv_sec - begin.tv_sec + (end.tv_nsec - begin.tv_nsec) / 1e9;
     return ret;

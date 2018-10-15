@@ -9,18 +9,8 @@
 #include "functions.h"
 
 // simple ijk version triple loop algorithm
-double dgemm0(int n)
+double dgemm0(double* a, double* b, double* c, int n)
 {
-    // Definitions
-    double* a = NULL;
-    double* b = NULL;
-    double* c = NULL;
-
-    // init
-    init_matrix_randomly(&a, &b, &c, n);
-    // printf("Inited0.\n");
-    // printf("(0,0)=%lf\n", a[0]);
-    
     // The algo
     timespec begin, end;
     clock_gettime(CLOCK_MONOTONIC, &begin);
@@ -30,8 +20,6 @@ double dgemm0(int n)
                 c[i * n + j] += a[i * n + k] * b[k * n + j];
     clock_gettime(CLOCK_MONOTONIC, &end);
     // printf("computed0\n");
-
-    uninit_matrix_with_free(a, b ,c);
 
     double ret = end.tv_sec - begin.tv_sec + (double)(end.tv_nsec - begin.tv_nsec) / 1e9;
     return ret;

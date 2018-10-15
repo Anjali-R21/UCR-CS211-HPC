@@ -1,0 +1,15 @@
+w/o block vs w/ block.......
+ijk   w/o block: 124.917025, w/ block: 110.165549, check...passed
+jik   w/o block: 99.751588, w/ block: 113.773800, check...passed
+kij   w/o block: 146.517365, w/ block: 172.192175, check...passed
+ikj   w/o block: 152.057539, w/ block: 148.632332, check...passed
+jki   w/o block: 186.914628, w/ block: 212.247078, check...passed
+kji   w/o block: 176.236170, w/ block: 199.389770, check...passed
+Different block size.....
+blocksize: 16, time: 132.225263, check...failed
+blocksize: 32, time: 124.270956, check...failed
+blocksize: 64, time: 119.647877, check...failed
+blocksize: 128, time: 119.480849, check...failed
+blocksize: 256, time: 179.049055, check...failed
+blocksize: 512, time: 198.338144, check...failed
+blocksize: 1024, time: 309.720355, check...failed

@@ -18,7 +18,7 @@ int main()
 
     // w/o block vs w/ block
     printf("w/o block vs w/ block.......\n");
-    n = 1000;
+    n = 2040;
     int blocksize = 10;
     // ijk
     memcpy(cijk, c_origin, n*n*sizeof(double));

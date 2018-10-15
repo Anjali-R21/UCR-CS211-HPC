@@ -1,0 +1,16 @@
+slurmstepd: error: *** JOB 6087 ON gpu03 CANCELLED AT 2018-10-14T22:33:56 ***
+w/o block vs w/ block.......
+ijk   w/o block: 94.302412, w/ block: 80.535773, check...passed
+jik   w/o block: 70.062692, w/ block: 79.229645, check...passed
+kij   w/o block: 96.980582, w/ block: 114.520909, check...passed
+ikj   w/o block: 100.882660, w/ block: 104.808855, check...passed
+jki   w/o block: 130.875436, w/ block: 142.237999, check...passed
+kji   w/o block: 147.928036, w/ block: 135.455820, check...passed
+Different block size.....
+blocksize: 16, time: 92.519490
+blocksize: 32, time: 86.572009, check...passed
+blocksize: 64, time: 83.127165, check...passed
+blocksize: 128, time: 83.618551, check...passed
+blocksize: 256, time: 130.979514, check...passed
+blocksize: 512, time: 145.029342, check...passed
+blocksize: 1024, time: 259.799642, check...passed

@@ -1,0 +1,32 @@
+blocksize: 6, time: 22.976936
+blocksize: 18, time: 18.803773, check...passed
+blocksize: 30, time: 17.376299, check...passed
+blocksize: 66, time: 16.270644, check...passed
+blocksize: 126, time: 15.914077, check...passed
+blocksize: 258, time: 16.529344, check...passed
+blocksize: 510, time: 16.904183, check...passed
+blocksize: 1026, time: 17.109632, check...passed
+blocksize: 6, time: 23.017116
+blocksize: 18, time: 18.802133, check...passed
+blocksize: 30, time: 17.356712, check...passed
+blocksize: 66, time: 16.231519, check...passed
+blocksize: 126, time: 15.851361, check...passed
+blocksize: 258, time: 16.407336, check...passed
+blocksize: 510, time: 16.719726, check...passed
+blocksize: 1026, time: 16.879164, check...passed
+blocksize: 6, time: 23.016755
+blocksize: 18, time: 18.798080, check...passed
+blocksize: 30, time: 17.246538, check...passed
+blocksize: 66, time: 16.087406, check...passed
+blocksize: 126, time: 15.725494, check...passed
+blocksize: 258, time: 16.403419, check...passed
+blocksize: 510, time: 16.725578, check...passed
+blocksize: 1026, time: 16.876754, check...passed
+blocksize: 6, time: 22.982381
+blocksize: 18, time: 18.801478, check...passed
+blocksize: 30, time: 17.253444, check...passed
+blocksize: 66, time: 16.092005, check...passed
+blocksize: 126, time: 15.732294, check...passed
+blocksize: 258, time: 16.408395, check...passed
+blocksize: 510, time: 16.739405, check...passed
+blocksize: 1026, time: 16.899618, check...passed

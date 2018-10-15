@@ -18,9 +18,9 @@ double dgemm3_cache(double* a, double* b, double *c, int n, int blocksize)
 
                 for (i1 = i; i1 < ni; i1 += 3) {
                     for (j1 = j; j1 < nj; j1 += 3) {
-                        register int t = i1 * n + j1;
-                        register int tt = t + n;
-                        register int ttt = tt + n;
+                        int t = i1 * n + j1;
+                        int tt = t + n;
+                        int ttt = tt + n;
                         register double c00 = c[t];
                         register double c01 = c[t + 1];
                         register double c02 = c[t + 2];
@@ -33,10 +33,10 @@ double dgemm3_cache(double* a, double* b, double *c, int n, int blocksize)
 
                         for (k1 = k; k1 < nk; k1 += 3) {
                             for (int l = 0; l < 3; l++) {
-                                register int ta = i1 * n + k1 + l;
-                                register int tta = ta + n;
-                                register int ttta = tta + n;
-                                register int tb = k1 * n + j1 + l * n;
+                                int ta = i1 * n + k1 + l;
+                                int tta = ta + n;
+                                int ttta = tta + n;
+                                int tb = k1 * n + j1 + l * n;
                                 register double a0 = a[ta];
                                 register double a1 = a[tta];
                                 register double a2 = a[ttta];

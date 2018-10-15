@@ -2,7 +2,7 @@
 #SBATCH --job-name=fq2p4
 #SBATCH --output=2-p4.txt
 #SBATCH -N 1
-#SBATCH -n 32
+#SBATCH -n 1
 #SBATCH -t 10:00:00
 
 ./2-p4-o0

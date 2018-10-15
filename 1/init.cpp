@@ -1,4 +1,5 @@
 #include "functions.h"
+#include <cmath>
 
 int Ns[] = {64, 128, 256, 512, 1024, 2048};
 int Nsp3[] = {66, 132, 258, 516, 1026, 2052};
@@ -27,4 +28,20 @@ void uninit_matrix_with_free(double* a, double* b, double* c)
     free(a);
     free(b);
     free(c);
+}
+
+bool check_correct(double* a, double* b, int n)
+{
+    double diff = fabs(a[0] - b[0]);
+    int t = n * n;
+    for (int i = 1; i < t; i++)
+    {
+        double _diff = fabs(a[i] - b[i]);
+        if (_diff > diff)
+            diff = _diff;
+    }
+
+    if (diff > 1e-2)
+        return false;
+    return true;
 }

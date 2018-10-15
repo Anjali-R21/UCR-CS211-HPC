@@ -1,6 +1,6 @@
 #include "functions.h"
 #include "2.algo.h"
-#include <memory>
+#include <memory.h>
 
 int main()
 {

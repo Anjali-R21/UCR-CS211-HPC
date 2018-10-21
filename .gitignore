@@ -95,3 +95,7 @@ dkms.conf
 2-p4-o1
 2-p4-o2
 2-p4-o3
+.vscode/
+.DS_Store
+part1
+part2

@@ -124,7 +124,8 @@ void dgemm3_cache_mod(double *a, double *b, double *c, int n, int i, int j, int 
 
             for (k1 = k; k1 < nk; k1 += 3)
             {
-                for (int l = 0; l < 3; l++)
+		int l;
+                for (l = 0; l < 3; l++)
                 {
                     int ta = i1 * n + k1 + l;
                     int tta = ta + n;

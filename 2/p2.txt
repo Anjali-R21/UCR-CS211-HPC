@@ -1,0 +1,40 @@
+n=1008...
+Lapack calculating...0.068124 s
+FQ calculating...3.729350 s, check...passed.
+FQ BLOCK calculating...1.285870 s, check...passed.
+n=2016...
+Lapack calculating...0.479404 s
+FQ calculating...30.376102 s, check...passed.
+FQ BLOCK calculating...8.227510 s, check...passed.
+n=3024...
+Lapack calculating...1.483592 s
+FQ calculating...103.087115 s, check...passed.
+FQ BLOCK calculating...25.037408 s, check...passed.
+n=4032...
+Lapack calculating...3.500611 s
+FQ calculating...243.675154 s, check...passed.
+FQ BLOCK calculating...58.374398 s, check...passed.
+n=5040...
+Lapack calculating...6.472502 s
+FQ calculating...477.564157 s, check...passed.
+FQ BLOCK calculating...107.632305 s, check...passed.
+n=1008...
+Lapack calculating...0.068599 s
+FQ calculating...0.592954 s, check...passed.
+FQ BLOCK calculating...0.302005 s, check...passed.
+n=2016...
+Lapack calculating...0.480955 s
+FQ calculating...5.839861 s, check...passed.
+FQ BLOCK calculating...1.936633 s, check...passed.
+n=3024...
+Lapack calculating...1.491874 s
+FQ calculating...19.823078 s, check...passed.
+FQ BLOCK calculating...6.100866 s, check...passed.
+n=4032...
+Lapack calculating...3.515211 s
+FQ calculating...47.707737 s, check...passed.
+FQ BLOCK calculating...14.362710 s, check...passed.
+n=5040...
+Lapack calculating...6.504706 s
+FQ calculating...93.211500 s, check...passed.
+FQ BLOCK calculating...26.852303 s, check...passed.

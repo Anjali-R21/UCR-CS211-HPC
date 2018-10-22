@@ -1,8 +1,8 @@
-CC := g++
+CC := gcc
 TARGETS := part1 part2 part2_o2
-INCLUDES := -I ~/lapack-3.8.0/CBLAS/include -I ~/lapack-3.8.0/LAPACKE/include
-LDS := ~/lapack-3.8.0/liblapacke.a ~/lapack-3.8.0/liblapack.a ~/lapack-3.8.0/libcblas.a /act/lib/openblas-0.2.20/lib/libopenblas.a
-LIBS := -lgfortran -pthread
+INCLUDES := -I/usr/local/opt/lapack/include -I/usr/local/opt/openblas/include
+LDS := -L/usr/local/opt/lapack/lib -L/usr/local/opt/openblas/lib
+LIBS := -llapacke -lopenblas
 
 part1: main.o
 	$(CC) -o part1 main.c -DPART_ONE $(INCLUDES) $(LDS) $(LIBS)

@@ -1,0 +1,4 @@
+The total number of primes: 455052511, time: 7.139763 s in 256 processes.
+The total number of primes: 455052511, time: 3.485822 s in 256 processes.
+The total number of primes: 139741510995167, time: 3.406382 s in 256 processes.
+The total number of primes: 455052511, time: 0.825508 s in 256 processes.
